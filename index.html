@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dereks' Website</title>
+    <link rel = "stylesheet" href = "./css/site.css"/>
+</head>
+<body>
+    <!--HEADER SECTION-->
+    <header id="top-anchor">
+        <div class="heading">
+            <h1>Welcome!</h1>
+            <div>
+                <p class="heading-info">
+                    This website was programmed using HTML5, CSS and JavaScript. More content will periodically be added.
+            </div>
+        </div>
+    </header>
+
+    <!--MAIN SECTION-->
+    <main>
+        <!--Intro block-->
+        <div class="intro subsection">
+            <h1>About Me</h1>
+            <!--Picture of self-->
+            <div>
+                <img src="./images/me.jpeg" alt="Picture of me" class="self-picture">
+            </div>
+            <div>
+                <!--Introduction paragraph-->
+                <p class="info2">
+                    Hello, and thank you for visiting my website! I am a graduate from the University of Toronto at Scarborough 
+                    who specialized in Statistics (Machine Learning and Data Mining). I am currently seeking a full-time job. 
+                    Check out the sections below to learn more about me.
+                </p>
+                <!--Buttons to jump to sections-->
+
+                <p>
+                    <button onclick= "location.href='#education'" type="button" class="button">Education</button>
+                    <button onclick= "location.href='#projects'" type="button" class="button">Projects</button>
+                    <button onclick= "location.href='#links'" type="button" class="button">Links</button>
+                </p>
+            </div>
+        </div>
+        
+        <!--Education block-->
+        <div class="education subsection">
+            <h1 id="education">Education</h1>
+            <p class="info">
+                I attended post secondary at the University of Toronto at Scarborough from 2016 to 2021. I officially received an Honours Bachelor of Science 
+                degree in June 2021.  <a href="courses.html" class="hyperlink">Here is a list of all my completed courses.</a>
+            </p>
+        </div>
+
+        <!--Project block-->
+        <div class="projects subsection">
+            <h1 id="projects">Projects</h1>
+
+            <div id="all-projects">
+                <button class="slide-down">Data Report for Durham Flight Center</button>
+                <div class="project">
+                    <p>Languages & Tools: R, Markdown</p>
+                    <ul>
+                        <li>
+                            Compiled a data report in a team for Durham Flight Center, using data on private/commercial
+                            pilot license training sessions
+                        </li>
+                        <li>
+                            Analyzed the data to discover how certain factors affect student training, and suggested ways to 
+                            improve training
+                        </li>
+                        <li>
+                            Used statistical methods and presented findings using tables, various plots, etc.
+                        </li>
+                        <li>
+                            Worked primarily using R, and knitted the final report using Markdown
+                        </li>
+                    </ul>
+                </div>
+                
+                <button class="slide-down">File Transfer Program</button>
+                <div class="project">
+                    <p>Languages & Tools: C</p>
+                    <ul>
+                        <li>
+                            Coded a server & client program to host a server over a local network where clients may request 
+                            for a file to be transferred over from server side
+                        </li>
+                        <li>
+                            Server instructed to read requested file and send over contents to client if file exists
+                        </li>
+                        <li>
+                            Programmed in C using file descriptors and sockets
+                        </li>
+                    </ul>
+                </div>
+                
+                <button class="slide-down">Convolutional Neural Network</button>
+                <div class="project">
+                    <p>Languages & Tools: Python, Pytorch</p>
+                    <ul>
+                        <li>
+                            Built an artificial neural network with 3 convolution layers, 3 feed-forward layers and max pooling
+                        </li>
+                        <li>
+                            Trained and tested on CIFAR10 dataset, which includes 60,000 32x32 colour images and 10 
+                            classes (6000 images per class)
+                        </li>
+                        <li>
+                            Programmed using PyTorch library in Python
+                        </li>
+                        <li>
+                            Training accuracy of the network reported on test data, along with a 10x10 confusion matrix
+                        </li>
+                    </ul>
+                </div>
+                
+                <button class="slide-down">Mathematical Matrix Program</button>
+                <div class="project">
+                    <p>Languages & Tools: Python</p>
+                    <ul>
+                        <li>
+                            Created a Python object oriented program using nodes to build mathematical matrices
+                        </li>
+                        <li>
+                            Included operations such as matrix addition, multiplication, column and row swapping, setting 
+                            values and more
+                        </li>
+                        <li>
+                            Matrix programmed to dynamically as new values are set and can support high dimensions
+                        </li>
+                        <li>
+                            Included test cases to check functionality
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="slide-down">Retail Store Application</button>
+                <div class="project">
+                    <p>Languages & Tools: Java, Android Studio</p>
+                    <ul>
+                        <li>
+                            Worked in a team to create a visually appealing and functional Android store application
+                        </li>
+                        <li>
+                            Used Java, Android Studio and SQLite database to create a mobile storefront built with SOLID 
+                            design principles and MVC
+                        </li>
+                        <li>
+                            Implemented material design practices to create a clean and functional user interface where 
+                            customers can buy items, save their shopping cart, and administrators can view sale history
+                        </li>
+                        <li>
+                            Had weekly standups by working with Scrum
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="slide-down">Python SQL Implementation</button>
+                <div class="project">
+                    <p>Languages & Tools: Python</p>
+                    <ul>
+                        <li>
+                            Coded a Python SQL program which accepts user queries to select data from a given file
+                        </li>
+                        <li>
+                            Developed test cases to ensure functionality of the program
+                        </li>
+                        <li>
+                            Will output retrieved data from the shell
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!--Links block-->
+        <div class="links subsection">
+            <h1 id="links">Additional Links</h1>
+            <div>
+                <ul class="my-links">
+                    <li><b><a href="https://github.com/dchiu1998" target="_blank" class="link">Github</a></b></li>
+                    <li><b><a href="https://www.linkedin.com/in/derek-chiu-863394205/" target="_blank" class="link">LinkedIn</a></b></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Back to top button on click-->
+        <div id="back-to-top">
+            <b><a href="#top-anchor" class="link">Back to Top</a></b>
+        </div>
+    </main>
+
+    <!--FOOTER SECTION-->
+    <footer>
+        <p>Created by: Derek Chiu</p>
+        <p>Email: d.chiu1998@gmail.com</p>
+    </footer>
+
+    <script src="./js/site.js"></script>
+</body>
+</html>
